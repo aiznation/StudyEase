@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyEase - Home</title>
+    <link rel="stylesheet" href="{% static 'vendors/boxicons/css/boxicons.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <h4>StudyEase</h4>
+        </div>
+        <ul class="header-center">
+            <li>
+                <h4>Home</h4>
+            </li>
+            <li>
+                <h4>Dashboard</h4>
+            </li>
+            <li>
+                <h4>About Us</h4>
+            </li>
+        </ul>
+        <ul class="header-right">
+
+            <select id="languageSelect" class="dropdown-select header-btn">
+                <option value="en" id="selectedLanguage">
+                    <h4>English</h4>
+                </option>
+                <option value="bn" id="secondOption">
+                    <h4>বাংলা</h4>
+                </option>
+            </select>
+
+            <li class="header-btn">
+                <h4>Log in</h4>
+            </li>
+            <li class="header-btn">
+                <h4>sign up</h4>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-btn">
+        <i class='bx bx-menu-alt-right'></i>
+    </div>
+
+    {% block home1 %} {% endblock home1 %}
+</body>
+
+<div id="footer">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</div>
+
+</html>
