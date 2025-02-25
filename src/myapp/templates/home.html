@@ -2,7 +2,7 @@
 
 {% load static %}
 
-<div class="home-top">
+<section class="home-top">
 
   <div data-svg-wrapper class="svg1-wrapper">
     <svg width="1435" height="254" viewBox="0 0 1435 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,13 +39,13 @@
 
     <div class="ht-image"></div>
 
-    <div class="ht-con flex-a">
+    <div class="ht-con flex-a-center">
       <div class="ht-left">
         <h2>Study Companion for Elementary and High school Students</h2>
         <div class="ht-find">FIND YOUR SUBJECT</div>
       </div>
       <div class="ht-right">
-        <div class="ai-message flex-ja">
+        <div class="ai-message flex-ja-center">
           <img src="{% static 'images/ai.png' %}" alt="studyease ai assistant" />
           <p>AI to assist students
             with best academic resources and tutorials</p>
@@ -68,6 +68,155 @@
 
   </div>
 
-</div>
+</section>
+
+<section class="pop-subjects">
+  <div class="container flex-a-center flex-dc">
+    <h2 class="section-title mb-30">
+      Popular Subjects
+    </h2>
+    <div class="title-svg" data-svg-wrapper>
+      <svg width="178" height="10" viewBox="0 0 178 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.41687 8.33115C48.9507 0.242173 116.134 -0.431949 177.251 8.33115" stroke="#0B7077"
+          stroke-width="2.24694" />
+      </svg>
+    </div>
+    <div class="subject-classes flex-ja-center mb-20">
+      <div class="class-btn selected">All Classes</div>
+      <div class="class-btn">Class 5</div>
+      <div class="class-btn">Class 8</div>
+      <div class="class-btn">Class 10</div>
+      <div class="class-btn">Class 6</div>
+    </div>
+    <div class="row mb-20 w-100">
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/bgram.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">বাংলা ব্যকরণ ও নির্মিতি</h4>
+            <h4 class="sub-class">অষ্টম শ্রেণী</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/phy9.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">Physics</h4>
+            <h4 class="sub-class">Class Nine-Ten</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/e6.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">English for Today</h4>
+            <h4 class="sub-class">Class Six</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/bngs5.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">Bangladesh and Global Studies</h4>
+            <h4 class="sub-class">Class Five</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="load-more-btn">
+      Load More
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </div>
+</section>
+
+
+<section class="pop-subjects">
+  <div class="container flex-a-center flex-dc">
+    <h2 class="section-title mb-30">
+      Popular Courses
+    </h2>
+    <div class="title-svg" data-svg-wrapper>
+      <svg width="178" height="10" viewBox="0 0 178 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.41687 8.33115C48.9507 0.242173 116.134 -0.431949 177.251 8.33115" stroke="#0B7077"
+          stroke-width="2.24694" />
+      </svg>
+    </div>
+    <div class="subject-classes flex-ja-center mb-20">
+      <div class="class-btn selected">All Types</div>
+      <div class="class-btn">Physics</div>
+      <div class="class-btn">Extra Curricular</div>
+    </div>
+    <div class="row mb-20 w-100">
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/bgram.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">বাংলা ব্যকরণ ও নির্মিতি</h4>
+            <h4 class="sub-class">অষ্টম শ্রেণী</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/phy9.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">Physics</h4>
+            <h4 class="sub-class">Class Nine-Ten</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/e6.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">English for Today</h4>
+            <h4 class="sub-class">Class Six</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+      <div class="subject">
+        <div class="subject-small">
+          <div class="subject-img" style="background-image:url('{% static 'images/bngs5.png' %}');">
+          </div>
+          <div class="subject-dtl">
+            <p class="sub-year">2025</p>
+            <h4 class="sub-name">Bangladesh and Global Studies</h4>
+            <h4 class="sub-class">Class Five</h4>
+            <div class="add-btn">ADD</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="load-more-btn">
+      Load More
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </div>
+</section>
 
 {% endblock home1 %}

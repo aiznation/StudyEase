@@ -1,7 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
-
+# Home page view
 def home_view(request):
-    print(request.headers)
-    return render(request, "templates/home.html", {})
+    return render(request, "home.html", {})
+
+# Sign-in page view
+def signin_view(request):
+    return render(request, "signin.html", {})
+
+# Sign-up page view
+def signup_view(request):
+    return render(request, "signup.html", {})

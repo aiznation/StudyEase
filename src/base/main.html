@@ -1,61 +1,147 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyEase - Home</title>
-    <link rel="stylesheet" href="{% static 'vendors/boxicons/css/boxicons.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/boxicons/css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
 <body>
-    <div id="header">
-        <div class="logo">
-            <h4>StudyEase</h4>
+
+    <header>
+
+        <div id="header">
+            <div class="logo">
+                <a href="{% url 'home' %}">
+                    <h4>StudyEase</h4>
+                </a>
+            </div>
+            <ul class="header-center">
+                <li>
+                    <a href="{% url 'home' %}">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li>
+                    <h4>Dashboard</h4>
+                </li>
+                <li>
+                    <h4>About Us</h4>
+                </li>
+            </ul>
+            <ul class="header-right">
+
+                <select id="languageSelect" class="dropdown-select header-btn">
+                    <option value="en" id="selectedLanguage">
+                        <h4>English</h4>
+                    </option>
+                    <option value="bn" id="secondOption">
+                        <h4>বাংলা</h4>
+                    </option>
+                </select>
+
+                <li class="header-btn">
+                    <a href="{% url 'signin' %}">
+                        <h4>Log in</h4>
+                    </a>
+                </li>
+                <li class="header-btn">
+                    <a href="{% url 'signup' %}">
+                        <h4>sign up</h4>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <ul class="header-center">
-            <li>
-                <h4>Home</h4>
-            </li>
-            <li>
-                <h4>Dashboard</h4>
-            </li>
-            <li>
-                <h4>About Us</h4>
-            </li>
-        </ul>
-        <ul class="header-right">
 
-            <select id="languageSelect" class="dropdown-select header-btn">
-                <option value="en" id="selectedLanguage">
-                    <h4>English</h4>
-                </option>
-                <option value="bn" id="secondOption">
-                    <h4>বাংলা</h4>
-                </option>
-            </select>
+        <div class="menu-btn">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
 
-            <li class="header-btn">
-                <h4>Log in</h4>
-            </li>
-            <li class="header-btn">
-                <h4>sign up</h4>
-            </li>
-        </ul>
-    </div>
-
-    <div class="menu-btn">
-        <i class='bx bx-menu-alt-right'></i>
-    </div>
+    </header>
 
     {% block home1 %} {% endblock home1 %}
 </body>
 
-<div id="footer">
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-</div>
+<footer id="footer">
+
+    <div class="footer-svg2" data-svg-wrapper>
+      <svg width="830" height="483" viewBox="0 0 830 483" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.6">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M675.84 92.0179C755.429 96.4279 843.186 94.0492 887.71 125.155C940.153 161.792 968.32 213.754 930.408 269.864C891.271 327.788 792.61 374.28 694.17 411.593C593.635 449.701 485.739 477.04 383.138 477.305C267.821 477.602 141.008 467.842 107.15 413.108C74.1652 359.786 161.606 288.56 227.696 226.022C280.197 176.342 346.408 127.554 437.802 100.225C520.861 75.3888 597.71 87.6887 675.84 92.0179Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M739.868 67.8068C842.217 74.4132 882.464 130.321 909.386 182.528C932.83 227.992 920.42 281.076 877.365 334.44C835.61 386.195 771.57 439.928 679.19 467.846C592.912 493.92 521.219 466.26 436.146 467.781C323.491 469.795 171.333 518.983 108.797 478.044C44.7871 436.14 103.188 354.504 164.373 289.866C219.409 231.724 318.171 189.564 418.521 150.843C523.018 110.522 637.37 61.1906 739.868 67.8068Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M751.787 80.0905C855.085 73.3668 950.874 101.139 971.83 151.327C991.617 198.716 895.178 254.161 846.939 307.973C805.264 354.462 787.868 405.179 712.828 440.252C627.482 480.141 516.916 512.042 431.299 502.239C348.47 492.755 351.575 432.895 313.226 394.497C270.233 351.449 146.021 324.726 196.652 267.295C247.886 209.18 397.979 216.595 500.562 182.002C591.477 151.343 658.569 86.158 751.787 80.0905Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M707.586 75.4286C802.899 77.8964 861.449 119.34 885.091 166.942C906.282 209.608 853.433 261.109 824.772 311.376C789.735 372.826 803.531 446.224 701.855 488.315C599.577 530.654 495.478 496.261 392.754 490.217C288.941 484.108 147.434 502.597 109.299 453.45C71.2768 404.448 160.818 333.752 224.85 273.827C275.432 226.49 346.499 188.641 428.088 155.109C518.238 118.058 615.187 73.0362 707.586 75.4286Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M679.561 98.7867C749.16 108.615 837.545 100.931 876 131.557C918.731 165.589 909.875 215.61 888.366 265.081C860.276 329.69 841.13 402.996 737.348 450.469C626.742 501.063 487.169 510.08 374.982 499.916C267.411 490.17 185.381 453.213 155.017 397.711C127.198 346.861 175.035 283.693 223.774 223.525C270.556 165.772 318.203 96.0563 422.49 67.5152C523.17 39.9615 591.932 86.4121 679.561 98.7867Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M653.587 127.186C753.225 131.109 906.341 97.2475 935.575 146.075C965.127 195.432 819.251 254.514 764.879 313.065C720.473 360.885 733.67 421.097 650.982 452.546C568.122 484.06 492.158 451.495 409.83 448.102C321.87 444.477 197.226 471.352 159.892 432.305C122.389 393.082 212.449 333.201 249.963 280.9C289.203 226.192 287.874 159.646 380.862 124.233C474.102 88.7238 560.799 123.532 653.587 127.186Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M675.542 104.596C747.466 111.452 793.941 136.997 832.706 167.258C880.671 204.701 943.085 240.734 920.126 295.526C893.704 358.579 819.108 431.22 707.543 465.953C599.81 499.492 508.021 464.923 410.176 454.283C323.788 444.888 223.737 446.494 179.437 408.521C131.012 367.012 118.263 306.74 170.34 248.7C220.147 193.191 329.762 157.59 430.333 128.902C514.309 104.949 599.319 97.3302 675.542 104.596Z"
+            stroke="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M672.281 98.7772C756.108 104.916 796.696 144.642 829.98 183.901C863.653 223.619 888.659 267.462 858.956 318.966C826.064 376 765.189 441.365 664.05 471.615C566.834 500.692 484.238 470.163 400.911 455.964C336.17 444.932 278.633 430.182 244.052 400.047C204.555 365.627 165.344 326.232 196.241 277.607C228.533 226.79 314.88 184.994 401.345 152.512C488.986 119.589 587.422 92.5629 672.281 98.7772Z"
+            stroke="white" />
+        </g>
+      </svg>
+    </div>
+
+    <h3 class="footer-title">StudyEase</h3>
+    <div class="footer-container">
+      <div class="footer-section">
+        <ul class="contact-info">
+          <li><i class='bx bxs-map'></i><strong> Address:</strong> Baridhara, Dhaka, Bangladesh</li>
+          <li><i class='bx bxs-phone'></i><strong> Phone:</strong> +88014293410</li>
+          <li><i class='bx bxs-time'></i><strong> Response hours:</strong> 8:00 to 20:00</li>
+          <li><i class='bx bxs-envelope'></i><strong> Email:</strong> info@studyease.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="#">Courses for Class Five</a></li>
+          <li><a href="#">Courses for SSC</a></li>
+          <li><a href="#">Extra Curricular Courses</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section newsletter-form">
+        <p>Stay up to date with the latest study materials and courses</p>
+        <form class="newsletter" method="get" autocomplete="off">
+          <input type="email" name="email" placeholder="Email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
 
 </html>
